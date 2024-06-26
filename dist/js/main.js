@@ -16,7 +16,9 @@ window.addEventListener('scroll', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     var video = document.getElementById('background-video');
+    var video2 = document.getElementById('background-video2');
     var playButton = document.getElementById('play-button');
+    var playButton2 = document.getElementById('play-button2');
     
     playButton.addEventListener('click', function() {
         if (video.paused) {
@@ -28,7 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
             playButton.style.display = 'block'; // Tampilkan kembali tombol saat video dijeda
         }
     });
+
+    playButton2.addEventListener('click', function() {
+        if (video2.paused) {
+            video2.muted = false;
+            video2.play();
+            playButton2.style.display = 'none'; // Sembunyikan tombol setelah diputar
+        } else {
+            video2.pause();
+            playButton2.style.display = 'block'; // Tampilkan kembali tombol saat video dijeda
+        }
+    });
 });
+
 
 const backToTopButton = document.getElementById('back-to-top');
 
