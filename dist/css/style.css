@@ -7,7 +7,7 @@
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../../assets/img/hero.webp");
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../../assets/img/hero_11zon.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,14 +79,14 @@ header {
     padding-top: 50px;
 }
 
-.hero .box-hero {
+/* .hero .box-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1fr);
     column-gap: 50px;
     align-items: center;
     justify-content: space-between;
-}
+} */
 .hero .box-hero .box:nth-child(1) h1{
     color: white;
     font-size: 3vw;
@@ -100,7 +100,7 @@ header {
     margin-bottom: 20px;
     font-weight: 100;
 }
-.hero .box-hero .box:nth-child(2) img{
+/* .hero .box-hero .box:nth-child(2) img{
     width: 100%;
 }
 
@@ -118,13 +118,13 @@ header {
 .hero .box-hero .box:nth-child(1) button:hover{
     background-color: #37b7c3a9;
     transition: all 0.3s ease;
-}
+} */
 
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     .hero .box-hero .box:nth-child(1) button{
         width: 150px;
     }
-}
+} */
 
 @media screen and (max-width:900px) {
     .menu-bar{
@@ -200,6 +200,12 @@ header {
         grid-template-columns: 1fr; /* 1 column */
         grid-template-rows: repeat(4, 1fr); /* 4 rows, auto height */
     }
+
+    .last-text p {
+        padding: 15px 0;
+        font-size: 14px; /* Adjust font size if needed */
+    }
+
 
 }
 
@@ -442,3 +448,13 @@ header {
 .back-to-top i {
     font-size: 24px;
 }
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #37B7C3;
+    font-weight: 700;
+    margin-top: 70px;
+    color: white;
+  }
